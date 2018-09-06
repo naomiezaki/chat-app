@@ -8,10 +8,13 @@ body{
     width: 500px; 
 }
 
+
 .speech-bubble {
 	position: relative;
 	background: #AED581;
-	border-radius: .4em;
+    border-radius: .4em;
+    padding-right:10px;
+	padding-left: 10px;
 }
 
 .speech-bubble:after {
@@ -26,5 +29,5 @@ body{
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -10px;
-	margin-left: -20px;
+    margin-left: -20px;
 }
