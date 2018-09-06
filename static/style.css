@@ -1,0 +1,9 @@
+body{
+    background-color: #4DB6AC !important;
+}
+
+.main-div{
+    margin: auto;
+    padding-top: 50px;
+    width: 500px; 
+}
