@@ -7,3 +7,24 @@ body{
     padding-top: 50px;
     width: 500px; 
 }
+
+.speech-bubble {
+	position: relative;
+	background: #AED581;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #AED581;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
