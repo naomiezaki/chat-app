@@ -5,9 +5,24 @@ body{
 .main-div{
     margin: auto;
     padding-top: 50px;
-    width: 500px; 
+    width: 500px;
 }
 
+
+
+h1{
+    text-align:center;
+    padding-bottom:50px;
+}
+
+.card-body{
+	background-color: #B2DFDB;
+}
+
+.no-message-panel{
+	color: #78909C;
+	font-size: 30px;
+}
 
 .speech-bubble {
 	position: relative;

@@ -6,9 +6,16 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
 socketio = SocketIO(app)
 
+# Routes--------------------------------------
 @app.route('/')
+def home():
+    return render_template('login.html')
+
+@app.route('/session')
 def sessions():
     return render_template('session.html')
+
+#---------------------------------------------
 
 def messageReceived(methods=['GET', 'POST']):
     print('message was received!!!')
