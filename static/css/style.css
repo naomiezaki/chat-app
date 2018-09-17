@@ -1,48 +1,33 @@
-body{
-    background-color: #4DB6AC !important;
-}
-
-.main-div{
+.container 
+{
+    max-width: 80%;
     margin: auto;
-    padding-top: 50px;
-    width: 500px;
 }
 
-
-
-h1{
-    text-align:center;
-    padding-bottom:50px;
+.panel-heading
+{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
 }
 
-.card-body{
-	background-color: #B2DFDB;
+.message-bubble 
+{
+    padding: 10px 0px 10px 0px;
 }
 
-.no-message-panel{
-	color: #78909C;
-	font-size: 30px;
+.message-bubble:nth-child(even) { background-color: #F5F5F5; }
+
+.message-bubble > *
+{
+    padding-left: 10px;    
 }
 
-.speech-bubble {
-	position: relative;
-	background: #AED581;
-    border-radius: .4em;
-    padding-right:10px;
-	padding-left: 10px;
-}
+.panel-body { padding: 0px; }
 
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right-color: #AED581;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -10px;
-    margin-left: -20px;
-}
+.panel-heading { background-color: #3d6da7 !important; color: white !important; }
+
+
