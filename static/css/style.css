@@ -16,7 +16,7 @@
 
 .message-bubble 
 {
-    padding: 10px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
 }
 
 .message-bubble:nth-child(even) { background-color: #F5F5F5; }
