@@ -14,19 +14,7 @@ def insert_message(json):
             'from': json.get('user_name'),
             'message': json.get('message')
         }
-        # messages = {
-        #     'from': str(json.get('user_name')),
-        #     'message': str(json.get('message'))
-        # }
         print(messages)
         message_id = messages_collection.insert_one(messages).inserted_id
         print('inserted')
 
-# messages = {
-#     "user_name": "celty",
-#     "message": "Hello"
-# }
-
-# message_id = messages_collection.insert_one(messages).inserted_id
-
-# pprint.pprint(messages_collection.find_one())
