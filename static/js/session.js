@@ -1,5 +1,8 @@
 let socket = io.connect('http://'+document.domain+':'+location.port);
 
+// let d = new Date(year, month, day, hours, minutes);
+
+
 
 socket.on('connect', ()=>{
     socket.emit('my event', {
@@ -9,6 +12,7 @@ socket.on('connect', ()=>{
         e.preventDefault()
         let user_name = localStorage.getItem('username')
         let user_input = $('input.message').val()
+        // let msg_date = d.getDate();
         socket.emit('my event', {
             user_name:user_name,
             message:user_input
@@ -16,6 +20,7 @@ socket.on('connect', ()=>{
         $('input.message').val('').focus()
     })
 })
+
 socket.on('my response', (msg)=>{
     console.log(msg)
     if(typeof msg.user_name !== 'undefined'){
