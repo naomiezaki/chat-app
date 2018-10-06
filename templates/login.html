@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> CHAT APP </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="static/css/style.css" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
+
+<head>
+
+    <title> CHAT APP </title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"> 
+
+</head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        CHATTER
-                    </div>
 
-                    <div class="panel-body">
-                        <h3> Hi! Please enter your username. </h3>
+    <div class="login-box">
 
-                    <div class="panel-footer">
-                        
-                            <div class="input-group">
-                                <form action="/session">
-                                    
-                                    <input type="text" class="username" id="username" placeholder="User Name">
-                                    <input type="submit" onClick="addUsername(username.value)">
-                                    
-                                </form>
-                            </div>
-                    </div>
-                        
-                    </div>
-                </div>
-            </div>
+    <img src="/static/css/user.png" class="avatar">
+
+        <h1>Login Here</h1>
+
+            <form action="/session">
+
+            <p>Username</p>
+            
+            <input type="text" class="username" id="username" placeholder="Enter username">
+            <input type="submit" onClick="addUsername(username.value)">
+
+            </form>
+        
+        
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    
         <script>
             localStorage.clear();
+
             function addUsername(username){
                 localStorage.setItem('username',username);
             }
-        </script>
+       </script>
 
     </body>
+
 </html>
