@@ -22,15 +22,16 @@
                         <h3> Hi! Please enter your username. </h3>
 
                     <div class="panel-footer">
-                        
-                            <div class="input-group">
-                                <form action="/session">
-                                    
-                                    <input type="text" class="username" id="username" placeholder="User Name">
-                                    <input type="submit" onClick="addUsername(username.value)">
-                                    
-                                </form>
-                            </div>
+                        <div class="input-group">
+                            <form action="/session" onsubmit="return addUsername(username.value)">
+                                
+                                <input type="text" class="username" id="username" placeholder="User Name">
+                                <!-- <input type="submit" onClick="addUsername(username.value)"> -->
+                                <input type="submit">
+                                
+                            </form>
+                            <div class="login-alert"></div>
+                        </div>
                     </div>
                         
                     </div>
@@ -38,11 +39,17 @@
             </div>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script> -->
         <script>
             localStorage.clear();
             function addUsername(username){
-                localStorage.setItem('username',username);
+                if(username==null){
+                    $('div.login-alert').append('<p style="color:red">Please enter username</p>');
+                    return false;
+                } else{
+                    localStorage.setItem('username',username);
+                    return true;
+                }
             }
         </script>
 
