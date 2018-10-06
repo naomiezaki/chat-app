@@ -1,6 +1,6 @@
 # CHAT APP
 
-###### Instructions:
+## Instructions:
 Create a virtual environment called `venv`: 
 
 ```
