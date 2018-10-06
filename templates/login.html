@@ -16,15 +16,16 @@
 
         <h1>Login Here</h1>
 
-            <form action="/session">
+            <form action="/session" onsubmit="return addUsername(username.value)">
 
             <p>Username</p>
             
             <input type="text" class="username" id="username" placeholder="Enter username">
-            <input type="submit" onClick="addUsername(username.value)">
+            <input type="submit">
 
             </form>
-        
+            
+    <div class="login-alert"></div>
         
         </div>
     
@@ -32,7 +33,13 @@
             localStorage.clear();
 
             function addUsername(username){
-                localStorage.setItem('username',username);
+                if(username==null){
+                    $('div.login-alert').append('<p style="color:red">Please enter username</p>');
+                    return false;
+                } else{
+                    localStorage.setItem('username',username);
+                    return true;
+                }
             }
        </script>
 

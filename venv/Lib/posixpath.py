@@ -10,6 +10,21 @@ Some of this can actually be useful on non-Posix systems too, e.g.
 for manipulation of the pathname component of URLs.
 """
 
+<<<<<<< HEAD
+=======
+# Strings representing various path-related bits and pieces.
+# These are primarily for export; internally, they are hardcoded.
+# Should be set before imports for resolving cyclic dependency.
+curdir = '.'
+pardir = '..'
+extsep = '.'
+sep = '/'
+pathsep = ':'
+defpath = ':/bin:/usr/bin'
+altsep = None
+devnull = '/dev/null'
+
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 import os
 import sys
 import stat
@@ -25,6 +40,7 @@ __all__ = ["normcase","isabs","join","splitdrive","split","splitext",
            "devnull","realpath","supports_unicode_filenames","relpath",
            "commonpath"]
 
+<<<<<<< HEAD
 # Strings representing various path-related bits and pieces.
 # These are primarily for export; internally, they are hardcoded.
 curdir = '.'
@@ -35,6 +51,8 @@ pathsep = ':'
 defpath = ':/bin:/usr/bin'
 altsep = None
 devnull = '/dev/null'
+=======
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 
 def _get_sep(path):
     if isinstance(path, bytes):

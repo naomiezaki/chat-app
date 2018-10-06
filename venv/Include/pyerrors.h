@@ -219,8 +219,11 @@ PyAPI_DATA(PyObject *) PyExc_IOError;
 PyAPI_DATA(PyObject *) PyExc_WindowsError;
 #endif
 
+<<<<<<< HEAD
 PyAPI_DATA(PyObject *) PyExc_RecursionErrorInst;
 
+=======
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 /* Predefined warning categories */
 PyAPI_DATA(PyObject *) PyExc_Warning;
 PyAPI_DATA(PyObject *) PyExc_UserWarning;

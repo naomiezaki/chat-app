@@ -1,5 +1,9 @@
 @echo off
+<<<<<<< HEAD
 set "VIRTUAL_ENV=C:\Thesis\chat-app\venv"
+=======
+set "VIRTUAL_ENV=C:\Users\User\Documents\MyProjects\chat-app\venv"
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

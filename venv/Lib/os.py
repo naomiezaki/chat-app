@@ -882,7 +882,11 @@ If mode == P_WAIT return the process's exit code if it exits normally;
 otherwise return -SIG, where SIG is the signal that killed it. """
         return _spawnvef(mode, file, args, env, execve)
 
+<<<<<<< HEAD
     # Note: spawnvp[e] is't currently supported on Windows
+=======
+    # Note: spawnvp[e] isn't currently supported on Windows
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 
     def spawnvp(mode, file, args):
         """spawnvp(mode, file, args) -> integer

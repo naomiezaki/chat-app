@@ -35,6 +35,12 @@
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
 #endif
+<<<<<<< HEAD
+=======
+#ifdef HAVE_CRYPT_H
+#include <crypt.h>
+#endif
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 
 /* For size_t? */
 #ifdef HAVE_STDDEF_H

@@ -18,12 +18,20 @@
 /*--start constants--*/
 #define PY_MAJOR_VERSION	3
 #define PY_MINOR_VERSION	6
+<<<<<<< HEAD
 #define PY_MICRO_VERSION	3
+=======
+#define PY_MICRO_VERSION	5
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 #define PY_RELEASE_LEVEL	PY_RELEASE_LEVEL_FINAL
 #define PY_RELEASE_SERIAL	0
 
 /* Version as a string */
+<<<<<<< HEAD
 #define PY_VERSION      	"3.6.3"
+=======
+#define PY_VERSION      	"3.6.5"
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
 /*--end constants--*/
 
 /* Version as a single 4-byte hex number, e.g. 0x010502B2 == 1.5.2b2.

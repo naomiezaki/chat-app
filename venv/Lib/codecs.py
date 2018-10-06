@@ -479,15 +479,26 @@ class StreamReader(Codec):
             self.charbuffer = self._empty_charbuffer.join(self.linebuffer)
             self.linebuffer = None
 
+<<<<<<< HEAD
+=======
+        if chars < 0:
+            # For compatibility with other read() methods that take a
+            # single argument
+            chars = size
+
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
         # read until we get the required number of characters (if available)
         while True:
             # can the request be satisfied from the character buffer?
             if chars >= 0:
                 if len(self.charbuffer) >= chars:
                     break
+<<<<<<< HEAD
             elif size >= 0:
                 if len(self.charbuffer) >= size:
                     break
+=======
+>>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
             # we need more data
             if size < 0:
                 newdata = self.stream.read()
