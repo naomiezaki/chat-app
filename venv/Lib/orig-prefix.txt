@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-c:\users\gabot\appdata\local\programs\python\python36-32
-=======
-c:\users\user\appdata\local\programs\python\python36-32
->>>>>>> 7ac2c2f99aa2262c9c8e886f414e7e5ac5bd63ba
