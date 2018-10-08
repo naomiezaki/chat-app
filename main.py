@@ -6,8 +6,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
 socketio = SocketIO(app)
 
-messages = []
-
 # Routes--------------------------------------
 @app.route('/')
 def home():
@@ -15,7 +13,7 @@ def home():
 
 @app.route('/session')
 def sessions():
-    return render_template('session.html')
+    return render_template('session.html', mes=db.allMessages())
 
 #---------------------------------------------
 
