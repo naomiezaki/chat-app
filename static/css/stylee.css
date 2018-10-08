@@ -1,13 +1,15 @@
 body{
-    margin: 0;
-    padding: 0;
-    background: url(3unsplash.jpg);
+
+    background: url(3unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
     font-family: Helvetica, sans-serif;
+    
 }
 
-.login-box{
+/* .login-box{
     width: 900px;
     height: 600px;
     background: rgba(253, 252, 252, 0.5);
@@ -88,5 +90,5 @@ h3{
     text-decoration: none;
     font-size: 14px;
     color: #fff;
-}
+} */
 
