@@ -26,10 +26,14 @@ body{
 }
 
 .panel-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    /* position: fixed;
+    bottom: 0; */
 }
-.panel-body { padding: 0px; }
+.panel-body { 
+    padding: 0px;
+}
 
-.panel-heading { background-color: #3d6da7 !important; color: white !important; }
+.panel-heading { 
+    background-color: #ef5350 !important; 
+    color: white !important; 
+}
