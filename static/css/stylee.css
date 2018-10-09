@@ -15,6 +15,12 @@ body{
     margin: auto;
 }
 
+.panel-footer
+{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
 .panel-heading
 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
@@ -25,10 +31,6 @@ body{
     line-height: 26.4px; 
 }
 
-.panel-footer {
-    /* position: fixed;
-    bottom: 0; */
-}
 .panel-body { 
     padding: 0px;
 }
@@ -36,4 +38,26 @@ body{
 .panel-heading { 
     background-color: #ef5350 !important; 
     color: white !important; 
+}
+
+.speech-bubble {
+	position: relative;
+	background: #ffcdd2;
+    border-radius: .4em;
+    padding: 5px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.594em solid transparent;
+	border-right-color: #ffcdd2;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.297em;
+	margin-left: -0.594em;
 }
