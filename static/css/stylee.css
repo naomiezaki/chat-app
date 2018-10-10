@@ -5,6 +5,43 @@ body{
     -o-background-size: cover;
     background-size: cover;
     font-family: Helvetica, sans-serif;
+}
+
+.login-box{
+    width: 900px;
+    height: 100%;
+    background: rgba(253, 252, 252, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 40px;
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #cc8e7c;
+}
+
+h3{
+    font-size: 12px;
+}
+
+.panel-footer input[type="text"]
+{
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
     
 }
 
@@ -25,59 +62,30 @@ body{
     background: transparent;
     outline: none;
     height: 40px;
-    color:#cc8e7c;
+    color: #fff;
     font-size: 16px;
 }
 
-.panel-footer
+.login-box input[type="submit"]
 {
     border: none;
     outline: none;
-    margin-left: -50px;
-    height: 20px;
-    width: 50px;
+    height: 40px;
     background: #556080;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
 }
-.panel-heading
+
+.login-box input[type="submit"]:hover
 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
-    font-size: 24px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    line-height: 26.4px; 
+    cursor: pointer;
+    background: #556080;
+    color: #000;
 }
 
-.panel-body { 
-    padding: 0px;
-}
-
-.panel-heading { 
-    background-color: #ef5350 !important; 
-    color: white !important; 
-}
-
-.speech-bubble {
-	position: relative;
-	background: #ffcdd2;
-    border-radius: .4em;
-    padding: 5px;
-}
-
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 0.594em solid transparent;
-	border-right-color: #ffcdd2;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -0.297em;
-	margin-left: -0.594em;
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
 }
