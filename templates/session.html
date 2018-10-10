@@ -5,7 +5,7 @@
 
     <title> CHAT APP </title>
     <link rel="stylesheet" type="text/css" href="static/css/stylee.css"> 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,10 +19,10 @@
                 <div class="row message-bubble">
 
                     <div class="message_holder">
-                            {% for m in mes %}
+                        {% for m in mes %}
                             <b style="color:#000">{{m.from}}</b> &nbsp &nbsp 
-                            <label class="message-bubble">{{m.message}}</label>
-                            <br>
+                            <label class="speech-bubble">{{m.message}}</label>
+                            <br><br>
                         {% endfor %}
                     </div> 
 
@@ -40,10 +40,10 @@
         </div>
         
         
-        </div>
+    </div>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
-        <script src="static/js/session.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    <script src="static/js/session.js"></script>
 
     </body>
 </html>

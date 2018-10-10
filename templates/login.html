@@ -10,25 +10,25 @@
 
     <body>
 
-    <div class="login-box">
+        <div class="login-box">
 
-    <img src="/static/css/user.png" class="avatar">
+            <img src="/static/css/user.png" class="avatar">
 
-        <h1>Login Here</h1>
+            <h1>Login Here</h1>
 
-            <form action="/session" onsubmit="return addUsername(username.value)">
+                <form action="/session" onsubmit="return addUsername(username.value)">
 
-            <p>Username</p>
+                <p>Username</p>
+                
+                <input type="text" class="username" id="username" placeholder="Enter username">
+                <input type="submit">
+
+                </form>
+                
+            <div class="login-alert"></div>
             
-            <input type="text" class="username" id="username" placeholder="Enter username">
-            <input type="submit">
-
-            </form>
-            
-    <div class="login-alert"></div>
-        
         </div>
-    
+        
         <script>
             localStorage.clear();
 
@@ -41,7 +41,7 @@
                     return true;
                 }
             }
-       </script>
+        </script>
 
     </body>
 

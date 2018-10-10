@@ -23,6 +23,6 @@ socket.on('my response', (msg)=>{
     console.log(msg);
     if(typeof msg.user_name !== 'undefined'){
         $('h3').remove()
-        $('div.message_holder').append('<div><b style"color:#000">'+msg.user_name+':'+'</b> &nbsp &nbsp'+'<label class="message-bubble">'+msg.message+'</label>'+'</div>')                    
+        $('div.message_holder').append('<div><b style"color:#000000">'+msg.user_name+':'+'</b> &nbsp &nbsp'+'<label class="speech-bubble">'+msg.message+'</label><br><br>'+'</div>')                    
     }
 });
