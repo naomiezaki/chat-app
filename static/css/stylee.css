@@ -7,9 +7,20 @@ body{
     font-family: Helvetica, sans-serif;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
 .login-box{
     width: 900px;
-    height: 100%;
+    height: 80%;
     background: rgba(253, 252, 252, 0.5);
     color: #fff;
     top: 50%;
@@ -20,6 +31,14 @@ body{
     padding: 60px 40px;
 }
 
+.panel-body{
+    height: 80%;
+    overflow: auto;
+}
+
+.message_holder{
+    padding-left: 20px;
+}
 
 h1{
     margin: 0;
@@ -32,6 +51,7 @@ h1{
 h3{
     font-size: 12px;
 }
+
 
 .panel-footer input[type="text"]
 {
